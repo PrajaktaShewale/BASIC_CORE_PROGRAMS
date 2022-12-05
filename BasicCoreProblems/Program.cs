@@ -9,7 +9,7 @@ namespace BasicCoreProblems
             while(flag)//for reapeat input
             {
                 Console.WriteLine("Welcome to Basic Core Programs");
-                Console.WriteLine("1. Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Exit");
+                Console.WriteLine("1. Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Power of 2" + "\n" + "4.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -20,6 +20,10 @@ namespace BasicCoreProblems
                         case 2:
                             LeapYear leap = new LeapYear();
                         leap.FindLeap();
+                        break;
+                    case 3:
+                        PowerOf2 pow = new PowerOf2();
+                        pow.Power();
                         break;
                         default:
                         flag = false;
