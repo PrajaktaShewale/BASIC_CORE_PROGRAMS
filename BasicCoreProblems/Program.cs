@@ -30,14 +30,14 @@ namespace BasicCoreProblems
                         HarmonicNumber harmonic = new HarmonicNumber();
                         harmonic.Harmonic();
                         break;
-                    //case 5:
-                      //  factors fact = new factors();
-                      //  fact.PrimeFact();
-                        //break;
-                    //case 6:
-                        //QuoAndReminder qr = new QuoAndReminder();
-                      //  qr.QuoRem();
-                        //break;
+                    case 5:
+                      factors fact = new factors();
+                      fact.PrimeFact();
+                        break;
+                    case 6:
+                        QuoAndReminder qr = new QuoAndReminder();
+                        qr.QuoRem();
+                        break;
                         default:
                         flag = false;
                         break;
