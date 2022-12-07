@@ -10,7 +10,8 @@ namespace BasicCoreProblems
             {
                 Console.WriteLine("Welcome to Basic Core Programs");
                 Console.WriteLine("1. Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Power of 2" + "\n" + "4.Harmonic value"
-                    + "\n" + "5.Factor" + "\n" + "6.Quotient and Remainder" + "\n" + "7.Swap Two Numbers" + "\n" + "8.Exit");
+                    + "\n" + "5.Factor" + "\n" + "6.Quotient and Remainder" + "\n" + "7.Swap Two Numbers" + "\n" + "8.Even Odd"
+                    + "\n" + "9.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -41,6 +42,10 @@ namespace BasicCoreProblems
                     case 7:
                         SwapTwoNumbers swap = new SwapTwoNumbers();
                         swap.Swap();
+                        break;
+                    case 8:
+                        EvenOdd evenOdd = new EvenOdd();    
+                        evenOdd.EvenOddNum();
                         break;
                         default:
                         flag = false;
