@@ -10,7 +10,7 @@ namespace BasicCoreProblems
             {
                 Console.WriteLine("Welcome to Basic Core Programs");
                 Console.WriteLine("1. Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Power of 2" + "\n" + "4.Harmonic value"
-                    + "\n" + "5.Factor" + "\n" + "6.Exit");
+                    + "\n" + "5.Factor" + "\n" + "6.Quotient and Remainder" + "\n" + "7.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -30,10 +30,14 @@ namespace BasicCoreProblems
                         HarmonicNumber harmonic = new HarmonicNumber();
                         harmonic.Harmonic();
                         break;
-                    case 5:
-                        factors fact = new factors();
-                        fact.PrimeFact();
-                        break;
+                    //case 5:
+                      //  factors fact = new factors();
+                      //  fact.PrimeFact();
+                        //break;
+                    //case 6:
+                        //QuoAndReminder qr = new QuoAndReminder();
+                      //  qr.QuoRem();
+                        //break;
                         default:
                         flag = false;
                         break;

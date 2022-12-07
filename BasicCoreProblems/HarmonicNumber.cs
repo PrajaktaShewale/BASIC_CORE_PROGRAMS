@@ -13,10 +13,13 @@ namespace BasicCoreProblems
             Console.WriteLine("Find the Harmonic Numbers");
             Console.WriteLine("Enter Harmonic Value which we have to find");
             int HarmonicNum = Convert.ToInt32(Console.ReadLine());
-            double result = 0;
-            for (int i = 0; i < HarmonicNum; i++)
+            double result = 1.0;
+            Console.WriteLine("1/1");
+
+            for (int i = 2; i <= HarmonicNum; i++)
             {
-                result = result + ((double)1/i);
+                Console.WriteLine($"+1/{i}");
+                result += 1 / (double)i;
 
             }
             Console.WriteLine("nth Harmonic value = " + result);    
